@@ -1,0 +1,86 @@
+/* defining styles for tip calc  */
+
+body{
+    background-color: #FFF6E9;
+    font-family: 'Arial Rounded MT';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+#main{
+    color: #fff;
+    background-color: #FF4848;
+    width: 300px;
+    height: 450px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 20px;
+    border: 4px solid #B2A4FF;
+    box-shadow: 4px 6px 8px #000;
+    transition: all 600ms linear;
+    box-sizing: content-box;
+}
+
+#main h1{
+    text-align: center;
+    text-decoration: 3px wavy #00FF9C underline ;
+}
+
+
+
+#main p input{
+    width: 280px;
+    margin: 10px 0;
+    padding: 2px;
+    font-size: 18px;
+    outline: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#main select{
+    width: 100px;
+    margin: 10px 0;
+    padding: 3px;
+    font-weight: bold;
+}
+
+#main  button{
+    width: 120px;
+    height: 30px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+#main [type="button"]{
+    background-color: #615EFC;
+    border: 2px solid #fff;
+}
+
+#main [type="reset"]{
+    background-color: #FF7F3E;
+    border: 2px solid #fff;
+}
+
+output{
+    color:#FFF455;
+}
+
+#main:hover{
+    transform: scale(1.005);
+    box-shadow: 6px 8px 12px #000;
+}

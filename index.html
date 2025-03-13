@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="main">
+        <h1>Tip Calcutor</h1>
+        <p>
+            <label for="ba"> Bill Amount (&#8377;) : </label><br>
+            <input type="number" id="ba" autofocus required>
+        </p>
+        <p>
+            <label for="tp"> Tip Percentage (%) : </label><br>
+            <input type="number" id="tp" min="5" max="25" required>
+        </p>
+        <p>
+            <label for="nop"> Numder of People : </label><br>
+            <select id="nop">
+                <option value="1">1</option>
+                <option value="2" selected>2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+        </p>
+        <p align="center" id="btn">
+            <button type="button" onclick="tipCalculate()">Calculate</button>
+            &nbsp; &nbsp;
+            <button type="reset" onclick="clearFields()">Reset</button>
+        </p>
+        <p>
+            <output id="tpp">Tip Per Person : </output>
+        </p>
+        <p>
+            <output id="tta">Total Tip Amount : </output>
+        </p>
+        <p>
+            <output id="fba">Final Bill Amount : </output>
+        </p>
+    </div>
+</body>
+</html>
